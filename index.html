@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">Dark Mode</button>
+
+    <!-- Task Creation Form -->
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Task Title" required>
+      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <select id="task-priority" required>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <select id="task-category" required>
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task Filtering and Search -->
+    <div id="filter-options">
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <label for="search">Search:</label>
+      <input type="text" id="search" placeholder="Search tasks...">
+    </div>
+
+    <!-- Task List -->
+    <div id="task-list"></div>
+
+    <!-- Notification Area -->
+    <div id="notification-area"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
