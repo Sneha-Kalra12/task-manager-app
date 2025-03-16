@@ -15,18 +15,26 @@
 
     <!-- Task Creation Form -->
     <form id="task-form">
-      <input type="text" id="task-title" placeholder="Task Title" required>
-      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <label for="task-title">Task Title:</label>
+      <input type="text" id="task-title" placeholder="Enter task title" required>
+
+      <label for="task-description">Task Description:</label>
+      <textarea id="task-description" placeholder="Enter task description"></textarea>
+
+      <label for="task-priority">Priority:</label>
       <select id="task-priority" required>
         <option value="low">Low</option>
         <option value="medium">Medium</option>
         <option value="high">High</option>
       </select>
+
+      <label for="task-category">Category:</label>
       <select id="task-category" required>
         <option value="personal">Personal</option>
         <option value="work">Work</option>
         <option value="urgent">Urgent</option>
       </select>
+
       <button type="submit">Add Task</button>
     </form>
 
@@ -39,6 +47,7 @@
         <option value="work">Work</option>
         <option value="urgent">Urgent</option>
       </select>
+
       <label for="search">Search:</label>
       <input type="text" id="search" placeholder="Search tasks...">
     </div>
